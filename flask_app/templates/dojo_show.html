@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{one_dojo.name}} Ninjas</title>
+</head>
+<body>
+    <p>{{one_dojo.name}}</p>
+    <ul>
+        {% for ninja in one_dojo.ninjas %}
+           <li> {{ninja.first_name}} {{ninja.last_name}} {{ninja.age}}</li>
+        {% endfor %}
+    </ul>
+    <a href="/dojos">Go Home</a>
+</body>
+</html>
